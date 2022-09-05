@@ -1,0 +1,68 @@
+Q1.   Write a python program to create a function that takes a list and return a new list with the original list's unique element.
+Ans.    def l1(*a):
+           for e in a:
+               c=e[::-1]
+           return c
+        print(l1([1,2,3]+[3,2,10]))
+        
+Q2.   Write a python program to create a function which check if number is Prime or Not.
+Ans.    def Prime(a):
+            if a%2==1:
+                print("Prime Number!")
+            else:
+                print("Non Prime NUmber!")
+        Prime(10)
+        
+//Q3.   Write a python program to create a function that print the even number from a given list.
+                l1=[1,2,3,4,5,6,7,8,9]
+Ans.   def Print_even(*a):
+              for e in a:
+                   if e%2==0:
+                       return c
+                    else:
+                       return 0
+        print(Print_even([1,2,3,4,5,6,7,8,9]))       
+        
+Q4.   Write a python program to create a function to check wether a given string is Palindrom or not.
+Ans.   def Check_pal(*a):
+             for e in a:
+                 if e==e[::-1]:
+                     print("Palindrom")
+                 else:
+                     print("Not a Palindrom")
+        Check_pal('level')
+        
+Q5.   Write a python program to create a function to find the minimum of Three numbers.
+Ans.   def f1(*a):
+          return(min(a))
+       print(f1(10,2,40))
+       
+//Q6.   Write a python program to create a function and print a list where the values are square of number between 1 and 30.
+Ans.   
+        
+Q7.   Write a python program to access the function inside the function.
+Ans.   def f1(a):
+           if a==1:
+              return 1
+           s=a+f1(a-1)
+           return s
+       print(f1(5))
+       
+Q8.   Write a python program to create a function that accept a string and calculate the number of uppercase and lowercase letter.
+Ans.   def f(*a):
+           for e in a:
+              if e=='A' to 'Z':
+                   i=i+1
+                   return i
+              elif e=='a' to 'z':
+                   i=i+1
+                   return i
+       print(f1('Rajeeev'))            
+                   
+              
+        
+        
+        
+        
+        
+        
