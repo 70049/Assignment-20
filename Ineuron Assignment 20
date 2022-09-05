@@ -49,20 +49,45 @@ Ans.   def f1(a):
        print(f1(5))
        
 Q8.   Write a python program to create a function that accept a string and calculate the number of uppercase and lowercase letter.
-Ans.   def f(*a):
-           for e in a:
-              if e=='A' to 'Z':
-                   i=i+1
-                   return i
-              elif e=='a' to 'z':
-                   i=i+1
-                   return i
-       print(f1('Rajeeev'))            
-                   
-              
-        
-        
-        
-        
-        
-        
+Ans.   def Ch():
+           print("Enter a String: ")
+           n=input()
+           lower=0
+           upper=0
+           for e in n:
+              if e>='A' and e<='Z':
+                   upper=upper+1
+              elif e>='a'and e<='z':
+                   lower=lower+1
+           print(upper)
+           print(lower)
+       Ch()
+       
+Q9.   Write a python program to create a function which check given string is Pangram or not.
+Ans.  import string
+           def ispangram(str):
+           alphabet = "abcdefghijklmnopqrstuvwxyz"
+	for c in alphabet:
+           	if c not in str.lower():
+           		return False
+	return True
+       string = 'the quick brown fox jumps over the lazy dog'
+       if(ispangram(string) == True):
+            print("Yes")
+       else:
+	 print("No")
+            
+Q10.  Write a python program to create a function which check if string is anagram or not.
+Ans.   def Check_anagram():
+             print("Enter Two string")
+             a,b=input(),input()
+             if len(a)==len(b):
+                  if sorted(a)==sorted(b):
+                       print("Yes It's an Anagram!")
+                  else:
+                       print("No It's not an Anagram!")
+             else:
+                 print("No It's Not in Anagram!")
+         Check_anagram()
+         
+         
